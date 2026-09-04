@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dnsforge"
+version = "0.1.0"
+description = "Dependency-free DNS inspection CLI"
+requires-python = ">=3.10"
+
+[project.scripts]
+dnsforge = "dnsforge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
